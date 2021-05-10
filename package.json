@@ -1,0 +1,24 @@
+{
+  "name": "natours2.0",
+  "version": "1.0.0",
+  "description": "A full fledged website for a tourism company",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "live-server": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Suyash-Purwar/Natours_2.0.git"
+  },
+  "author": "Suyash Purwar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Suyash-Purwar/Natours_2.0/issues"
+  },
+  "homepage": "https://github.com/Suyash-Purwar/Natours_2.0#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "node-sass": "^6.0.0"
+  }
+}
