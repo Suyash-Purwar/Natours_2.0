@@ -109,6 +109,56 @@ body {
   animation: moveInBottom 0.5s ease-out 0.3s;
   animation-fill-mode: backwards; }
 
+.row {
+  margin: 0 auto;
+  max-width: 114rem;
+  background-color: #eee; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    clear: both;
+    display: block; }
+
+[class^="col-"] {
+  color: #fff;
+  float: left;
+  text-align: center;
+  background-color: #55c57a;
+  padding: 1.6rem; }
+  [class^="col-"]:not(:last-child) {
+    margin-right: 2rem; }
+
+.col-1-of-2 {
+  width: calc((100% - 2rem) / 2); }
+
+.col-1-of-3 {
+  width: calc((100% - (2*2rem)) / 3); }
+
+.col-2-of-3 {
+  width: calc((2*((100% - (2*2rem)) / 3)) + 2rem); }
+
+.col-1-of-4 {
+  width: calc((100% - (3*2rem)) / 4); }
+
+.col-3-of-4 {
+  width: calc((3 * ((100% - (3*2rem)) / 4)) + 2*2rem); }
+
+.col-2-of-4 {
+  width: calc((2 * ((100% - (3*2rem)) / 4)) + 2rem); }
+
+.col-1-of-5 {
+  width: calc((100% - (4*2rem)) / 5); }
+
+.col-4-of-5 {
+  width: calc((4 * (100% - (4*2rem)) / 5) + 3*2rem); }
+
+.col-3-of-5 {
+  width: calc((3 * (100% - (4*2rem)) / 5) + 2*2rem); }
+
+.col-2-of-5 {
+  width: calc((2 * (100% - (4*2rem)) / 5) + 2rem); }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
