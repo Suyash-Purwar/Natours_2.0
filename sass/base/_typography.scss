@@ -3,12 +3,12 @@ body {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.7;
-    color: $text-color-dark;
+    color: $color-dark;
     padding: 3rem;
 }
 
-.primary-heading {
-    color: $text-color-white;
+.heading-primary {
+    color: $color-white;
     text-transform: uppercase;
 
     backface-visibility: hidden;
@@ -32,5 +32,36 @@ body {
         letter-spacing: 1.75rem;
     
         animation: moveInRight 1s ease-out;
+    }
+}
+
+.heading-secondary {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    transition: all 0.2s;
+
+    &:hover {
+        transform: skewY(2deg) skewX(15deg) scale(1.1);
+        text-shadow: .5rem 1rem 2rem rgba($color-dark, 0.2)
+    }
+}
+
+.heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.paragraph {
+    font-size: 1.6rem;
+
+    &:not(:last-child) {
+        margin-bottom: 3rem;
     }
 }

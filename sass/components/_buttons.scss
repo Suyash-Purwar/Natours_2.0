@@ -11,7 +11,7 @@
 
     &:hover {
         transform: translateY(-3px);
-        box-shadow: 0 10px 20px rgba($text-color-black, 0.2);
+        box-shadow: 0 10px 20px rgba($color-black, 0.2);
 
         &::after {
             transform: scaleX(1.4) scaleY(1.5);
@@ -21,7 +21,7 @@
 
     &:active {
         transform: translateY(-1px);
-        box-shadow: 0 5px 10px rgba($text-color-black, 0.2);
+        box-shadow: 0 5px 10px rgba($color-black, 0.2);
     }
 
     &::after {
@@ -38,11 +38,11 @@
     }
 
     &--white {
-        background-color: $text-color-white;
-        color: $text-color-dark;
+        background-color: $color-white;
+        color: $color-dark;
 
         &::after {
-            background-color: $text-color-white;
+            background-color: $color-white;
         }
     }
 
@@ -50,4 +50,31 @@
         animation: moveInBottom 0.5s ease-out 0.3s;
         animation-fill-mode: backwards;
     }
+}
+
+.btn-text {
+
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        color: $color-primary;
+        text-decoration: none;
+        display: inline-block;
+        padding: 3px;
+        border-bottom: 1px solid $color-primary;
+        transition: all .2s;
+    }
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: 0 1rem 2rem rgba($color-black, .15);
+        transform: translateY(-2px);
+    }
+
+    &:active {
+        transform: translate(0);
+        box-shadow: 0 .5rem 1rem rgba($color-black, .15);
+    }
+
 }
